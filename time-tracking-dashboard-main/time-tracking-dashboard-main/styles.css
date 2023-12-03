@@ -1,0 +1,49 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns with equal width */
+    grid-template-rows: 1fr 1fr; /* Two rows with auto sizing */
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+  }
+  
+#profile-content {
+    /* display: flex;
+    flex-direction: column; */
+    /* grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+    grid-area: 1 / 1 / 3 / 2;
+   
+}
+
+.profileContainer img {
+    height: 70px;
+    border-radius: 50%;
+}
+
+.profileContainer p {font-size: 20px;}
+.profileContainer h2 {font-size: 40px;}
+
+#work {
+    grid-area: 1/ 2/ 1/ 2;
+}
+
+#play {
+    
+}
+
+#exercise {
+    grid-column-start: 2;
+}
+
