@@ -51,16 +51,17 @@ body {
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 2; */
-    width: 14rem;
+    /* width: 14rem; */
+    width: 100%;
     grid-area: 1 / 1 / 3 / 2;
-    background: var(--light-blue);
+    background: #1e204c;
     border-radius: 12px;
    
 }
 
 .profileContainer {
     height: 65%;
-    background-color: purple;
+    background-color: #5847e9;
     border-radius: 12px;
     padding: 12px;
 }
@@ -74,11 +75,14 @@ body {
 .profileContainer h2 {font-size: 40px;}
 
 .activityContainer {
+    /* height: 200px;
+    width: 200px; */
     border-radius: 20px;
+    position: relative;
 }
 
 .tracking-divs {
-    position: relative;
+    /* position: relative; */
     height: 200px;
     width: 200px;
     background-size: cover;
@@ -87,15 +91,25 @@ body {
 }
 
 .track-text-wrap {
-    background: var(--dark-blue-track-div);
+    /* background: var(--dark-blue-track-div);
     position: absolute;
     top: 21%;
     right: -5%;
     height: 14rem;
     width: 13.8rem;
-    border-radius: 20px;
+    border-radius: 20px; */
+
+
     /* border-top-left-radius: 10px;
     border-top-right-radius: 10px; */
+
+    background: var(--dark-blue-track-div);
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    height: 13rem;
+    width: 100%;
+    border-radius: 20px;
 }
 
 #work {
