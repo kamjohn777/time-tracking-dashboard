@@ -1,140 +1,116 @@
-
 :root {
-    /* --dark-blue: #021222; */
-    /* --dark-blue-track-div: #270e79; */
-    /* --dark-blue-track-div: #12043f; */
-    --dark-blue: #0c1323;
-    --dark-blue-track-div: #1e204c;
-    --light-blue: #0074e4;
-    --white: #ffffff;
-    --gray: #808080;
+  --dark-blue: #0c1323;
+  --dark-blue-track-div: #1e204c;
+  --light-blue: #0074e4;
+  --white: #ffffff;
+  --gray: #808080;
 
-    /* colors for icons div background */
-    --icon-div-orange: #ff8a64;
-    --icon-div-blue: #56c1e5;
-    --icon-div-red: #fe5e7d;
-    --icon-div-green: #4dcf83;
-    --icon-div-purple: #7335d3;
-    --icon-div-yellow: #f1c75a;
+  /* colors for icons div background */
+  --icon-div-orange: #ff8a64;
+  --icon-div-blue: #56c1e5;
+  --icon-div-red: #fe5e7d;
+  --icon-div-green: #4dcf83;
+  --icon-div-purple: #7335d3;
+  --icon-div-yellow: #f1c75a;
 
-    /* icons color */
-    --icon-orange: #af5c40;
-    --icon-blue: #3b829a;
-    --icon-red: #aa3e53;
-    --icon-green: #3a9c63;
-    --icon-purple: #4d2883;
-    --iocn-yellow: #8b7232;
-  }
+  /* icons color */
+  --icon-orange: #af5c40;
+  --icon-blue: #3b829a;
+  --icon-red: #aa3e53;
+  --icon-green: #3a9c63;
+  --icon-purple: #4d2883;
+  --iocn-yellow: #8b7232;
+}
 
 body {
-    background: var(--dark-blue);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  background: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .main-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four columns with equal width */
-    grid-template-rows: 1fr 1fr; /* Two rows with auto sizing */
-    gap: 20px;
-    width: 80%;
-    margin: auto;
-    padding: 10px;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns with equal width */
+  grid-template-rows: 1fr 1fr; /* Two rows with auto sizing */
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
 #profile-content {
-    /* display: flex;
-    flex-direction: column; */
-    /* grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 2; */
-    /* width: 14rem; */
-    width: 100%;
-    grid-area: 1 / 1 / 3 / 2;
-    background: #1e204c;
-    border-radius: 12px;
-   
+  width: 100%;
+  grid-area: 1 / 1 / 3 / 2;
+  background: #1e204c;
+  border-radius: 12px;
 }
 
 .profileContainer {
-    height: 65%;
-    background-color: #5847e9;
-    border-radius: 12px;
-    padding: 12px;
+  height: 65%;
+  background-color: #5847e9;
+  border-radius: 12px;
+  padding: 12px;
 }
 
 .profileContainer img {
-    height: 70px;
-    border-radius: 50%;
+  height: 70px;
+  border-radius: 50%;
 }
 
-.profileContainer p {font-size: 20px;}
-.profileContainer h2 {font-size: 40px;}
+.profileContainer p {
+  font-size: 20px;
+}
+.profileContainer h2 {
+  font-size: 40px;
+}
 
 .activityContainer {
-    /* height: 200px;
-    width: 200px; */
-    border-radius: 20px;
-    position: relative;
+  border-radius: 20px;
+  position: relative;
 }
 
 .tracking-divs {
-    /* position: relative; */
-    height: 200px;
-    width: 200px;
-    background-size: cover;
-    background-position: center;
-    margin: 10px;
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
 }
 
 .track-text-wrap {
-    /* background: var(--dark-blue-track-div);
-    position: absolute;
-    top: 21%;
-    right: -5%;
-    height: 14rem;
-    width: 13.8rem;
-    border-radius: 20px; */
-
-
-    /* border-top-left-radius: 10px;
-    border-top-right-radius: 10px; */
-
-    background: var(--dark-blue-track-div);
-    position: absolute;
-    top: 20%;
-    right: 0%;
-    height: 13rem;
-    width: 100%;
-    border-radius: 20px;
+  background: var(--dark-blue-track-div);
+  position: absolute;
+  top: 20%;
+  right: 0%;
+  height: 11.1rem;
+  width: 100%;
+  border-radius: 20px;
 }
 
 #work {
-    grid-area: 1/ 2/ 1/ 2;
-    background: var(--icon-div-orange);
+  grid-area: 1/ 2/ 1/ 2;
+  background: var(--icon-div-orange);
 }
 
 #play {
-    background: var(--icon-div-blue);
+  background: var(--icon-div-blue);
 }
 
 #study {
-    background: var(--icon-div-red);
+  background: var(--icon-div-red);
 }
 
 #exercise {
-    grid-column-start: 2;
-    background: var(--icon-div-green);
+  grid-column-start: 2;
+  background: var(--icon-div-green);
 }
 
 #social {
-    background: var(--icon-div-purple);
+  background: var(--icon-div-purple);
 }
 
 #selfCare {
-    background: var(--icon-div-yellow);
+  background: var(--icon-div-yellow);
 }
-

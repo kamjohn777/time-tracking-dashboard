@@ -1,150 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
 
-</head>
-<body>
-
-  <div class="main-container">
-    <div id="profile-content">
-      <div id="userProfile" class="profileContainer">
-        <img src="./images/image-jeremy.png" alt="picture of Jeremy">
-        <p>Report for</p>
-        <h2>Jeremy Robinson</h2>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="profile-content">
+        <div id="userProfile" class="profileContainer">
+          <img src="./images/image-jeremy.png" alt="picture of Jeremy" />
+          <p>Report for</p>
+          <h2>Jeremy Robinson</h2>
+        </div>
+        <div id="reportOptions" class="reportOptionsContainer">
+          <p>Daily</p>
+          <p>Weekly</p>
+          <p>Monthly</p>
+          <!-- Each tag will have a click event in javascript that will display the daily, weekly, monthly -->
+        </div>
       </div>
-  
-      <div id="reportOptions" class="reportOptionsContainer">
-        <p>Daily</p>
-        <p>Weekly</p>
-        <p>Monthly</p>
-        <!-- Each tag will have a click event in javascript that will display the daily, weekly, monthly -->
+
+      <div id="work" class="activityContainer">
+        <div id="track-1" class="tracking-divs">
+          <div class="track-text-wrap">
+            <p>Work</p>
+            <h2>This Will be the current set hours</h2>
+            <p>Last Week - (Last Weeks Hours)</p>
+          </div>
+        </div>
       </div>
-    </div>
- 
-  <div id="work" class="activityContainer">
-    <div id="track-1" class="tracking-divs">
-      <div class="track-text-wrap">
-      <p>Work</p>
-      <h2>This Will be the current set hours</h2>
-      <p>Last Week - (Last Weeks Hours)</p>
+
+      <div id="play" class="activityContainer">
+        <div id="track-2" class="tracking-divs">
+          <div class="track-text-wrap">
+            <p>Play</p>
+            <h2>This Will be the current set hours</h2>
+            <p>Last Week - (Last Weeks Hours)</p>
+          </div>
+        </div>
       </div>
-    </div>
-  
 
-    5hrs <!-- daily -->
-    Previous - 7hrs <!-- daily -->
-    32hrs <!-- weekly -->
-    Previous - 36hrs <!-- weekly -->
-    103hrs <!-- monthly -->
-    Previous - 128hrs <!-- monthly -->
-  
-  </div>
-
-  <div id="play" class="activityContainer">
-    <div id="track-2" class="tracking-divs">
-      <div class="track-text-wrap">
-      <p>Play</p>
-      <h2>This Will be the current set hours</h2>
-      <p>Last Week - (Last Weeks Hours)</p>
+      <div id="study" class="activityContainer">
+        <div id="track-3" class="tracking-divs">
+          <div class="track-text-wrap">
+            <p>Study</p>
+            <h2>This Will be the current set hours</h2>
+            <p>Last Week - (Last Weeks Hours)</p>
+          </div>
+        </div>
       </div>
-    </div>
-   
-    Play
-    1hr <!-- daily -->
-    Previous - 2hrs <!-- daily -->
-    10hrs <!-- weekly -->
-    Previous - 8hrs <!-- weekly -->
-    23hrs <!-- monthly -->
-    Previous - 29hrs <!-- monthly -->
-  
-  </div>
 
-  <div id="study" class="activityContainer">
-    <div id="track-3" class="tracking-divs">
-      <div class="track-text-wrap">
-      <p>Study</p>
-      <h2>This Will be the current set hours</h2>
-      <p>Last Week - (Last Weeks Hours)</p>
-      </div> 
-    </div>
-    
-    Study
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 7hrs <!-- weekly -->
-    13hrs <!-- monthly -->
-    Previous - 19hrs <!-- monthly -->
-  </div>
-
-  <div id="exercise" class="activityContainer">
-    <div id="track-4" class="tracking-divs">
-      <div class="track-text-wrap">
-      <p>Exercise</p>
-      <h2>This Will be the current set hours</h2>
-      <p>Last Week - (Last Weeks Hours)</p>
+      <div id="exercise" class="activityContainer">
+        <div id="track-4" class="tracking-divs">
+          <div class="track-text-wrap">
+            <p>Exercise</p>
+            <h2>This Will be the current set hours</h2>
+            <p>Last Week - (Last Weeks Hours)</p>
+          </div>
+        </div>
       </div>
-    </div>
-  
-    Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-  </div>
 
-  
-  <div id="social" class="activityContainer">
-    <div id="track-5" class="tracking-divs">
-      <div class="track-text-wrap">
-      <p>Social</p>
-      <h2>This Will be the current set hours</h2>
-      <p>Last Week - (Last Weeks Hours)</p>
+      <div id="social" class="activityContainer">
+        <div id="track-5" class="tracking-divs">
+          <div class="track-text-wrap">
+            <p>Social</p>
+            <h2>This Will be the current set hours</h2>
+            <p>Last Week - (Last Weeks Hours)</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="selfCare" class="activityContainer">
+        <div id="track-6" class="tracking-divs">
+          <div class="track-text-wrap">
+            <p>Self Care</p>
+            <h2>This Will be the current set hours</h2>
+            <p>Last Week - (Last Weeks Hours)</p>
+          </div>
+        </div>
       </div>
     </div>
-   
-    Social
-    1hr <!-- daily -->
-    Previous - 3hrs <!-- daily -->
-    5hrs <!-- weekly -->
-    Previous - 10hrs <!-- weekly -->
-    21hrs <!-- monthly -->
-    Previous - 23hrs <!-- monthly -->
-  </div>
-
-  <div id="selfCare" class="activityContainer">
-    <div id="track-6" class="tracking-divs">
-      <div class="track-text-wrap">
-      <p>Self Care</p>
-      <h2>This Will be the current set hours</h2>
-      <p>Last Week - (Last Weeks Hours)</p>
-      </div>
-    </div>
-  
-    Self Care
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    2hrs <!-- weekly -->
-    Previous - 2hrs <!-- weekly -->
-    7hrs <!-- monthly -->
-    Previous - 11hrs <!-- monthly -->
-  
-  </div>
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-</div>
-  <script src="./main.js"></script>
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>
