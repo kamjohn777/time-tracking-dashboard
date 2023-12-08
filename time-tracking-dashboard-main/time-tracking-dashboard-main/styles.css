@@ -66,6 +66,18 @@ body {
   font-size: 40px;
 }
 
+.reportOptionsContainer .times-p {
+  color: var(--white);
+}
+
+.track-text-wrap p {
+  color: var(--white);
+}
+
+.track-text-wrap h2 {
+  color: var(--white);
+}
+
 .activityContainer {
   border-radius: 20px;
   position: relative;
