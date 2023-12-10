@@ -162,7 +162,6 @@ body {
 }
 
   .activityContainer {
-    /* height: 250px; */
     height: 160px;
     width: 250px;
     border-radius: 20px;
@@ -173,21 +172,13 @@ body {
   }
 
   .track-text-wrap {
-    /* background: var(--dark-blue-track-div);
-    position: absolute; */
     display: flex;
     flex-direction: column;
-    /* top: 14%;
-    right: 0%;
-    height: 90%;
-    width: 100%;
-    border-radius: 20px; */
     z-index: 100;
     justify-content: space-around;
 }
 
   .track-text-wrap h2 {
-    /* color: var(--white); */
     margin-left: 30px;
     font-size: 50px;
     margin-top: 0;
@@ -195,7 +186,6 @@ body {
   }
 
   .track-text-wrap p {
-    /* color: var(--white); */
     margin-left: 30px;
     font-size: 14px;
     margin-top: 0;
