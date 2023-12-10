@@ -68,6 +68,8 @@ body {
 
 .reportOptionsContainer .times-p {
   color: var(--white);
+  cursor: pointer;
+  width: fit-content;
 }
 
 .track-text-wrap p {
@@ -79,8 +81,18 @@ body {
 }
 
 .activityContainer {
+  /* height: 300px; */
+  height: 250px;
+  width: 280px;
   border-radius: 20px;
   position: relative;
+
+
+  /* height: 200px; */
+  /* width: 200px; */
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
 }
 
 .tracking-divs {
@@ -94,11 +106,12 @@ body {
 .track-text-wrap {
   background: var(--dark-blue-track-div);
   position: absolute;
-  top: 20%;
+  top: 14%;
   right: 0%;
-  height: 11.1rem;
+  height: 90%;
   width: 100%;
   border-radius: 20px;
+  z-index: 100;
 }
 
 #work {

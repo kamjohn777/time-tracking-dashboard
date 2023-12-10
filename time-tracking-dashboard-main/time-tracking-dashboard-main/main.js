@@ -11,12 +11,34 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   // Select all elements with the class 'image-div'
-  const imageDivs = document.querySelectorAll(".tracking-divs");
+  // const imageDivs = document.querySelectorAll(".tracking-divs");
+  const imageDivs = document.querySelectorAll(".activityContainer");
 
   // Use forEach to loop through each div and set the background image
+  // imageDivs.forEach((div, index) => {
+  //   div.style.backgroundImage = `url('${imagePaths[index]}')`;
+  // });
+
   imageDivs.forEach((div, index) => {
-    div.style.backgroundImage = `url('${imagePaths[index]}')`;
+    // Create a new image element
+    const img = document.createElement("img");
+  
+    // Set the source attribute of the image
+    img.src = imagePaths[index];
+  
+    // Set the width and height of the image
+    img.style.width = "50px";
+    img.style.height = "50px";
+  
+    // Set the position to top right
+    img.style.position = "absolute";
+    img.style.top = "0";
+    img.style.right = "0";
+  
+    // Append the image to the div
+    div.appendChild(img);
   });
+  
 });
 
 
