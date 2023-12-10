@@ -32,8 +32,8 @@ body {
 
 .main-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Four columns with equal width */
-  grid-template-rows: 1fr 1fr; /* Two rows with auto sizing */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
   gap: 20px;
   width: 80%;
   margin: auto;
@@ -68,28 +68,34 @@ body {
 
 .reportOptionsContainer .times-p {
   color: var(--white);
+  margin-left: 20px;
   cursor: pointer;
   width: fit-content;
+  opacity: 0.5; /* Set default opacity */
+  transition: opacity 0.3s ease;
+}
+
+.reportOptionsContainer .times-p.clicked {
+  opacity: 1; /* Set opacity for clicked element */
 }
 
 .track-text-wrap p {
   color: var(--white);
+  margin-left: 30px;
+  font-size: 20px;
 }
 
 .track-text-wrap h2 {
   color: var(--white);
+  margin-left: 30px;
+  font-size: 50px;
 }
 
 .activityContainer {
-  /* height: 300px; */
   height: 250px;
   width: 280px;
   border-radius: 20px;
   position: relative;
-
-
-  /* height: 200px; */
-  /* width: 200px; */
   background-size: cover;
   background-position: center;
   margin: 10px;
@@ -138,4 +144,61 @@ body {
 
 #selfCare {
   background: var(--icon-div-yellow);
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+  }
+
+  #profile-content {
+    width: 16rem;
+}
+
+  .activityContainer {
+    /* height: 250px; */
+    height: 160px;
+    width: 250px;
+    border-radius: 20px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+  }
+
+  .track-text-wrap {
+    /* background: var(--dark-blue-track-div);
+    position: absolute; */
+    display: flex;
+    flex-direction: column;
+    /* top: 14%;
+    right: 0%;
+    height: 90%;
+    width: 100%;
+    border-radius: 20px; */
+    z-index: 100;
+    justify-content: space-around;
+}
+
+  .track-text-wrap h2 {
+    /* color: var(--white); */
+    margin-left: 30px;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .track-text-wrap p {
+    /* color: var(--white); */
+    margin-left: 30px;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }

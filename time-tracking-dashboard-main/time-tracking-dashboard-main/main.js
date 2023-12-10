@@ -15,10 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const imageDivs = document.querySelectorAll(".activityContainer");
 
   // Use forEach to loop through each div and set the background image
-  // imageDivs.forEach((div, index) => {
-  //   div.style.backgroundImage = `url('${imagePaths[index]}')`;
-  // });
-
   imageDivs.forEach((div, index) => {
     // Create a new image element
     const img = document.createElement("img");
@@ -177,11 +173,27 @@ const updateContent = (timeframe) => {
   });
 };
 
+
+// Function to handle click events for .times-p elements
+const handleTimeframeClick = (clickedElement, timeframe) => {
+  // Remove 'clicked' class from all elements
+  document.querySelectorAll(".times-p").forEach((element) => {
+    element.classList.remove("clicked");
+  });
+
+  // Add 'clicked' class to the clicked element
+  clickedElement.classList.add("clicked");
+
+  // Update content based on the selected timeframe
+  updateContent(timeframe);
+};
+
 // Event listeners for the timeframe options
-dailyView.addEventListener("click", () => updateContent("daily"));
-weeklyView.addEventListener("click", () => updateContent("weekly"));
-monthlyView.addEventListener("click", () => updateContent("monthly"));
+dailyView.addEventListener("click", () => handleTimeframeClick(dailyView, "daily"));
+weeklyView.addEventListener("click", () => handleTimeframeClick(weeklyView, "weekly"));
+monthlyView.addEventListener("click", () => handleTimeframeClick(monthlyView, "monthly"));
 
 // Initial setup, e.g., show daily content by default
-updateContent("daily");
+handleTimeframeClick(dailyView, "daily");
+
 
